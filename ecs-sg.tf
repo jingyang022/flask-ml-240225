@@ -8,7 +8,7 @@ resource "aws_security_group" "ecs-sg" {
   }
 }
 
-resource "aws_vpc_security_group_ingress_rule" "allow_inbound_5000" {
+resource "aws_vpc_security_group_ingress_rule" "allow_inbound_8080" {
   security_group_id = aws_security_group.ecs-sg.id
   cidr_ipv4         = "0.0.0.0/0"
   from_port         = 5000
